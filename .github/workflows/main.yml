@@ -1,0 +1,36 @@
+
+name: Python package
+
+
+
+on: [push,pull_request]
+
+
+
+jobs:
+
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    
+
+    # checkout the repo
+
+    - name: Cloning repository
+
+      uses: actions/checkout@master
+
+    
+
+    - name: Get current run metadata using curL
+
+      run: curl -X GET "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/jobs"
+
+     
+
+    - name: App Service Web App Build Action
+
+      uses: qianz2/appservice-build@master
