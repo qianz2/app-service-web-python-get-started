@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: CURL to download
-        uses: PLATFORM_BINARY_DOWNLOAD_START=$SECONDS
-              curl -D headers.txt -SL https://oryxsdksdev.blob.core.windows.net/python/python-3.8.0.tar.gz --output
-              PLATFORM_BINARY_DOWNLOAD_ELAPSED_TIME=$(($SECONDS - $PLATFORM_BINARY_DOWNLOAD_START))
-              echo $PLATFORM_BINARY_DOWNLOAD_ELAPSED_TIME >> output.txt
+        uses: PLATFORM_BINARY_DOWNLOAD_START=$SECONDS \
+              curl -D headers.txt -SL https://oryxsdksdev.blob.core.windows.net/python/python-3.8.0.tar.gz --output \
+              PLATFORM_BINARY_DOWNLOAD_ELAPSED_TIME=$(($SECONDS - $PLATFORM_BINARY_DOWNLOAD_START)) \
+              echo $PLATFORM_BINARY_DOWNLOAD_ELAPSED_TIME >> output.txt \
               echo "Downloaded in $PLATFORM_BINARY_DOWNLOAD_ELAPSED_TIME sec(s)."
         
         
