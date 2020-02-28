@@ -14,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Cloning repository
+        uses: actions/checkout@master
+      
       - name: record current time
         uses: PLATFORM_BINARY_DOWNLOAD_START=$SECONDS
       
