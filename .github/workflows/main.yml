@@ -5,8 +5,6 @@ name: Python package
 
 on: [push,pull_request]
 
-
-
 jobs:
 
   build-and-deploy:
