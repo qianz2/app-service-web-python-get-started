@@ -29,4 +29,7 @@ jobs:
       - name: echo downloading time
         uses: echo "Downloaded in $PLATFORM_BINARY_DOWNLOAD_ELAPSED_TIME sec(s)."
         
+      - name: App Service Web App Build Action
+        uses: Azure/appservice-build@zqian/test-new-image 
+        
         
