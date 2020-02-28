@@ -23,7 +23,7 @@ jobs:
       - name: calculate elapsed time
         uses: PLATFORM_BINARY_DOWNLOAD_ELAPSED_TIME=$(($SECONDS - $PLATFORM_BINARY_DOWNLOAD_START))
 
-      -name: echo downloading time
-       uses: echo "Downloaded in $PLATFORM_BINARY_DOWNLOAD_ELAPSED_TIME sec(s)."
+      - name: echo downloading time
+        uses: echo "Downloaded in $PLATFORM_BINARY_DOWNLOAD_ELAPSED_TIME sec(s)."
         
         
