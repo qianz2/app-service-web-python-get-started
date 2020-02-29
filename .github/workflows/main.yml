@@ -1,12 +1,12 @@
 
 name: Python package2
- 
+
 on: [push,pull_request]
 jobs: 
 
   build-and-deploy:
     runs-on: ubuntu-latest 
-    steps:  
+    steps: 
       - name: Cloning repository
         uses: actions/checkout@master 
         
