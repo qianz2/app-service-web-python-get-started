@@ -1,6 +1,6 @@
 
-name: Python package1
-
+name: Python package2
+ 
 on: [push,pull_request]
 jobs: 
 
