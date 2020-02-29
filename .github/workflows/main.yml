@@ -1,8 +1,8 @@
 
-name: Python package
+name: Python package1
 
 on: [push,pull_request]
-jobs:
+jobs: 
 
   build-and-deploy:
     runs-on: ubuntu-latest 
